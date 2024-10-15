@@ -77,7 +77,7 @@ export default function TimelineAndCompliance (){
                             }} />
                         )}
                     </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '8px' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent:'center', marginLeft: '8px' }}>
                         <Typography sx={{ fontSize: '0.9rem' }}>
                             Milestone Name
                         </Typography>
