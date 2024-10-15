@@ -27,6 +27,18 @@ export default function OverviewAndRepo() {
     };
   }, []);
 
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 600);
+
+  useEffect(() => {
+      const handleResize = () => {
+          setIsSmallScreen(window.innerWidth < 600);
+      };
+
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
   return (
     <div>
       <Grid container spacing={2}>
@@ -37,9 +49,12 @@ export default function OverviewAndRepo() {
     borderRadius: 6,
     border: '0.6px solid #BD7D4966',
     padding: '16px',
+    display:'flex',
+    flexDirection:'column',
+    justifyContent:'space-evenly',
 }}>
     <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', marginTop:'-30px' }}>
             <Typography sx={{ fontSize: '1.2rem', paddingTop: '18px', paddingLeft: '18px', fontFamily: 'unset' }}>
                 Project Overview
             </Typography>
@@ -50,12 +65,11 @@ export default function OverviewAndRepo() {
     </div>
 
     <Grid container spacing={2} sx={{
-        paddingLeft: '18px',
         marginTop: '49px',
         justifyContent: 'space-evenly',
     }}>
         <Grid size =  {{xs:12, sm:6, md:6}}>
-            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <div style={{ display: 'flex',justifyContent: isSmallScreen ? 'center' : 'start', alignItems: 'center' }}>
                 <ProgressBar2 value={80} />
             </div>
         </Grid>
@@ -187,7 +201,7 @@ export default function OverviewAndRepo() {
               Upload Document
             </Button>
 
-            <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '17px', gap: '35px', overflowX: 'hidden', overflowY:'hidden', minHeight: '224px', marginBottom: '16px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '17px', gap: '32px', overflowX: 'hidden', overflowY:'hidden', minHeight: '224px', marginBottom: '16px' }}>
               {[
                 { name: "First Floor Plan.doc", status: "In Progress", color: 'brown', progress: 50 },
                 { name: "Ground Floor Plan.doc", status: "Rejected", color: 'pink', progress: 100 },
