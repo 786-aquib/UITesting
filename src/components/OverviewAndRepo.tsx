@@ -51,7 +51,7 @@ export default function OverviewAndRepo() {
             <div style={{ display: 'flex', }}>
               <ProgressBar2 value={80} />
             </div>
-            <div style={{ display: 'flex', flexDirection: 'row', marginTop: '30px' }}>
+            <div style={{ display: 'flex', flexDirection: 'row' }}>
               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly', marginRight: '25px', flexWrap: 'wrap' }}>
                 <Typography>
                   <span style={{
@@ -168,14 +168,14 @@ export default function OverviewAndRepo() {
               sx={{
                 width: '90%',
                 justifyContent: 'center',
-                borderRadius: '4px',
-                border: '0.6px solid #BD7D4966',
+                borderRadius: '8px',
                 margin: '10px auto',
-                boxShadow: '1px solid black',
+                border: '1px solid #D0D5DD',
                 marginBottom: '25px',
+                color:'black',
               }}
             >
-              <DownloadIcon sx={{ marginRight: '2px', }} />
+              <DownloadIcon sx={{ marginRight: '2px', color:'black'}} />
               Upload Document
             </Button>
 

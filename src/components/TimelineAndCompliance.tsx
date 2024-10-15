@@ -69,7 +69,7 @@ export default function TimelineAndCompliance (){
                             <div style={{
                                 position: 'absolute',
                                 left: '50%',
-                                top: '100%', // Position below the icon
+                                top: '117%', // Position below the icon
                                 width: '2px',
                                 height: '15px', // Adjust height as needed
                                 backgroundColor: '#17726D',
@@ -91,7 +91,7 @@ export default function TimelineAndCompliance (){
         </div>
         <Button
                 sx={{
-                    marginTop: '10px',
+                    marginTop: '12px',
                     borderRadius: '10px',
                     border: '0.6px solid #0000002E',
                     fontSize: '14px',
@@ -126,7 +126,7 @@ export default function TimelineAndCompliance (){
           <span
             style={{
               backgroundColor: '#b3d3b3',
-              borderRadius: '4px',
+              borderRadius: '16px',
               marginTop: '14px',
               padding: '8px',
               marginRight: '12px',
@@ -137,8 +137,8 @@ export default function TimelineAndCompliance (){
           </span>
         </div>
 
-        <Grid2 container spacing={2}>
-          {/* First Part: Compliance Overview */}
+        <Grid2 container spacing={2} sx={{display:'flex'}}>
+
           <Grid2  size = {{xs:12, sm:6, md:6}}>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '214px' }}>
               <HalfCutProgressBar value={25} />
@@ -151,8 +151,9 @@ export default function TimelineAndCompliance (){
             </div>
           </Grid2>
 
-          {/* Second Part: AI-powered Assistant */}
-          <Grid2  size = {{xs:12, sm:6, md:6}}>
+
+
+          <Grid2  size = {{xs:12, sm:6, md:6}} sx={{marginTop:'49px'}}>
             <Typography>
               AI-powered compliance check assistant to Improve Water Efficiency Level
             </Typography>
