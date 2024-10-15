@@ -30,8 +30,8 @@ export default function SideBar() {
             <Typography
                 sx={{ display: 'flex', justifyContent: 'start', flexDirection: 'row', height: '68px', paddingTop: '30px', paddingLeft: '6px' }}
             >
-                <OfflineBoltIcon fontSize="large" sx={{ marginRight: '7px' }} />
-                <span style={{ fontSize: '1.2rem', fontFamily: 'sans-serif', fontWeight: '700' }}>Sample Work</span>
+                <OfflineBoltIcon fontSize="large" sx={{ marginRight: '7px', color:'#17726D' }} />
+                <span style={{ fontSize: '1.2rem', fontFamily: 'sans-serif', fontWeight: '600', lineHeight:'22.4px' }}>Sample Work</span>
             </Typography>
 
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', paddingLeft: '10px', flexGrow: 1 }}>
@@ -44,12 +44,12 @@ export default function SideBar() {
                     padding: '16px'
                 }}>
                     {[
-                        { icon: <HomeIcon />, label: "Home" },
-                        { icon: <SignalCellularAltIcon />, label: "Dashboard" },
-                        { icon: <TocIcon />, label: "Projects" },
-                        { icon: <AssignmentTurnedInIcon />, label: "Tasks" },
-                        { icon: <PieChartOutlineIcon />, label: "Reporting" },
-                        { icon: <GroupIcon />, label: "Users" }
+                        { icon: <HomeIcon  sx={{color: '#667085'}}/>, label: "Home" },
+                        { icon: <SignalCellularAltIcon sx={{color: '#667085'}} />, label: "Dashboard" },
+                        { icon: <TocIcon sx={{color: '#667085'}} />, label: "Projects" },
+                        { icon: <AssignmentTurnedInIcon sx={{color: '#667085'}} />, label: "Tasks" },
+                        { icon: <PieChartOutlineIcon sx={{color: '#667085'}} />, label: "Reporting" },
+                        { icon: <GroupIcon sx={{color: '#667085'}} />, label: "Users" }
                     ].map((item, index) => (
                         <Typography key={index} sx={{ display: 'flex', alignItems: 'center', fontWeight: '500' }}>
                             {item.icon}
@@ -68,12 +68,12 @@ export default function SideBar() {
                     paddingTop: '224px',
                 }}>
                     <Typography sx={{ display: 'flex', alignItems: 'center', fontWeight: '500' }}>
-                        <HelpOutlineIcon fontSize='medium' sx={{ marginRight: '4px', paddingLeft: '2px' }} />
+                        <HelpOutlineIcon fontSize='medium' sx={{ marginRight: '4px', paddingLeft: '2px', color: '#667085' }} />
                         Support
                     </Typography>
 
                     <Typography sx={{ display: 'flex', alignItems: 'center', fontWeight: '500' }}>
-                        <SettingsIcon fontSize='medium' sx={{ marginRight: '4px', paddingLeft: '2px' }} />
+                        <SettingsIcon fontSize='medium' sx={{ marginRight: '4px', paddingLeft: '2px', color: '#667085' }} />
                         Setting
                     </Typography>
 

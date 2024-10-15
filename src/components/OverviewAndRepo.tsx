@@ -46,7 +46,7 @@ export default function OverviewAndRepo() {
             flexDirection: flexDirection,
             paddingLeft: '18px',
             marginTop: '49px',
-            justifyContent: 'space-between',
+            justifyContent: 'space-evenly',
           }}>
             <div style={{ display: 'flex', }}>
               <ProgressBar2 value={80} />
