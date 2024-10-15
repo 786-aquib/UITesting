@@ -9,7 +9,7 @@ interface HalfCutProgressBarProps {
 
 const HalfCutProgressBar: React.FC<HalfCutProgressBarProps> = ({ value }) => {
     // Scale the value for a half-circle representation
-    const halfValue = value > 50 ? 100 : value * 2;
+    const halfValue = value / 2 ;
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -29,7 +29,7 @@ const HalfCutProgressBar: React.FC<HalfCutProgressBarProps> = ({ value }) => {
                 </div>
             </div>
             <Typography sx={{ marginTop: '-50px', fontSize: '2rem' }}>
-                {value}%
+                {value/2}%
             </Typography>
         </div>
     );

@@ -12,9 +12,9 @@ function App() {
       <SideBar />
       <div style={{ flexGrow: 1 }}> {/* This allows TopHeader to take available space */}
         <TopHeader />
-        <div style={{ flexGrow: 1,  marginTop: '10px', marginLeft:'10px', marginRight:'10px'}}>
+        <div style={{   marginTop: '10px', marginLeft:'10px', marginRight:'10px'}}>
           <OverviewAndRepo />
-          <div style={{ flexGrow: 1, marginTop: '10px'}}>
+          <div style={{  marginTop: '10px'}}>
           <TimelineAndCompliance />
           </div>
         </div>

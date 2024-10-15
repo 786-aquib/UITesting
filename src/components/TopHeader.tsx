@@ -22,11 +22,11 @@ const Header = () => {
                 boxSizing: 'border-box' // Include padding in width calculations
             }}
         >
-            <div
-                style={{ fontSize: '1.2rem', fontFamily: 'inherit', fontWeight: 400 }}
+            <Typography
+                sx={{ fontSize: { xs: '0.9rem', md: '1rem' }, fontFamily: 'inherit', fontWeight: 400 }}
             >
                 Green Building Monitoring
-            </div>
+            </Typography>
 
             <div
                 style={{

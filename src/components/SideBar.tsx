@@ -32,8 +32,9 @@ export default function SideBar() {
 
             {(isOpen || !isMobile) && (
                 <div style={{
-                    width: '280px',
-                    height: '100vh',
+                    width:'fit-content',
+                    maxWidth: '280px',
+                    height: 'fit-content',
                     borderRight: '1px solid #EAECF0',
                     position: isMobile ? 'absolute' : 'static', // Use absolute positioning only on mobile
                     top: 0,
