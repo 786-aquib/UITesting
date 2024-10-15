@@ -175,11 +175,11 @@ export default function OverviewAndRepo() {
           overflowX: 'hidden'
         }}>
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%', overflowX: 'hidden' }}>
-            <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '6px' }}>
-              <Typography sx={{ fontSize: { xs: '1rem', md: '1.2rem' }, paddingTop: '18px', paddingLeft: '18px', fontFamily: 'unset' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', marginLeft: '20px' }}>
+              <Typography sx={{ fontSize: { xs: '1rem', md: '1.2rem' }, paddingTop: '18px',  fontFamily: 'unset' }}>
                 Document Repository
               </Typography>
-              <Typography sx={{ fontSize: { xs: '0.8rem', md: '0.9em' }, paddingLeft: '18px' }}>
+              <Typography sx={{ fontSize: { xs: '0.8rem', md: '0.9em' },  }}>
                 You can check your Project Overview here
               </Typography>
             </div>
@@ -193,10 +193,11 @@ export default function OverviewAndRepo() {
                 border: '1px solid #D0D5DD',
                 marginBottom: '25px',
                 color: 'black',
-                fontSize: { xs: '0.8rem', md: '1rem' }
+                fontSize: { xs: '0.8rem', md: '1rem' },
+                alignItems:'start',
               }}
             >
-              <DownloadIcon sx={{ marginRight: '2px', color: 'black',  }} />
+              <DownloadIcon sx={{ marginRight: '3px', color: 'black',  }} />
                Upload Document
             </Button>
 
