@@ -14,7 +14,7 @@ function App() {
         <TopHeader />
         <div style={{ flexGrow: 1,  marginTop: '10px', marginLeft:'10px', marginRight:'10px'}}>
           <OverviewAndRepo />
-          <div style={{ flexGrow: 1, marginTop: '30px'}}>
+          <div style={{ flexGrow: 1, marginTop: '10px'}}>
           <TimelineAndCompliance />
           </div>
         </div>

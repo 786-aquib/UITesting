@@ -30,7 +30,7 @@ export default function SideBar() {
             <Typography
                 sx={{ display: 'flex', justifyContent: 'start', flexDirection: 'row', height: '68px', paddingTop: '30px', paddingLeft: '6px' }}
             >
-                <OfflineBoltIcon fontSize="large" sx={{ marginRight: '7px', color:'#17726D' }} />
+                <OfflineBoltIcon fontSize="large" sx={{ marginRight: '7px', color:'#17726D', marginTop:'-4px' }} />
                 <span style={{ fontSize: '1.2rem', fontFamily: 'sans-serif', fontWeight: '600', lineHeight:'22.4px' }}>Sample Work</span>
             </Typography>
 
