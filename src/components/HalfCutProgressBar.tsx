@@ -4,11 +4,10 @@ import 'react-circular-progressbar/dist/styles.css';
 import { Typography } from '@mui/material';
 
 interface HalfCutProgressBarProps {
-    value: number; // Progress value should be between 0 and 100
+    value: number;
 }
 
 const HalfCutProgressBar: React.FC<HalfCutProgressBarProps> = ({ value }) => {
-    // Scale the value for a half-circle representation
     const halfValue = value / 2 ;
 
     return (
@@ -22,8 +21,8 @@ const HalfCutProgressBar: React.FC<HalfCutProgressBarProps> = ({ value }) => {
                             pathColor: '#BD7D49',
                             trailColor: '#d6d6d6',
                             strokeLinecap: 'round',
-                            rotation: 0.5, // Start from the bottom
-                            pathTransitionDuration: 1000, // Adjust transition duration as needed
+                            rotation: 0.5, 
+                            pathTransitionDuration: 1000, 
                         })}
                     />
                 </div>

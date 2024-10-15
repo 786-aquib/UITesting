@@ -20,12 +20,12 @@ export default function TimelineAndCompliance() {
                 <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
                     <div style={{ display: 'flex', flexDirection: 'column' }}>
                         <Typography
-                            sx={{ fontSize: { xs: '1rem', md: '1.2rem' }, pt: 2, fontFamily: 'unset' }} // Responsive font size
+                            sx={{ fontSize: { xs: '1rem', md: '1.2rem' }, pt: 2, fontFamily: 'unset' }} 
                         >
                             Project Timeline
                         </Typography>
                         <Typography
-                            sx={{ fontSize: { xs: '0.75rem', md: '0.9rem' } }} // Adjusted font size
+                            sx={{ fontSize: { xs: '0.75rem', md: '0.9rem' } }} 
                         >
                             You can check the timeline of the project here
                         </Typography>
@@ -76,7 +76,7 @@ export default function TimelineAndCompliance() {
                                     <Typography sx={{ fontSize: '0.9rem' }}>
                                         Milestone Name
                                     </Typography>
-                                    <Typography sx={{ fontSize: '0.75rem', display: 'flex', alignItems: 'center' }}> {/* Adjusted font size */}
+                                    <Typography sx={{ fontSize: '0.75rem', display: 'flex', alignItems: 'center' }}> 
                                         <EventAvailableIcon sx={{ fontSize: '1rem', marginRight: '2px' }} />
                                         25 Aug 2022 - 11:30 AM
                                     </Typography>
@@ -115,7 +115,7 @@ export default function TimelineAndCompliance() {
                         <Typography sx={{ fontSize: { xs: '0.9rem', md: '1.1rem' }, paddingTop: '18px', paddingLeft: '18px', fontFamily: 'unset' }}>
                             Compliance Section
                         </Typography>
-                        <Typography sx={{ fontSize: { xs: '0.8rem', md: '1rem' }, paddingLeft: '18px' }}> {/* Adjusted font size */}
+                        <Typography sx={{ fontSize: { xs: '0.8rem', md: '1rem' }, paddingLeft: '18px' }}> 
                             You can check an overview of the project here
                         </Typography>
                     </div>

@@ -10,7 +10,7 @@ function App() {
   return (
     <div style={{ display: 'flex', backgroundColor: '#FFFAF5' }}>
       <SideBar />
-      <div style={{ flexGrow: 1 }}> {/* This allows TopHeader to take available space */}
+      <div style={{ flexGrow: 1 }}>
         <TopHeader />
         <div style={{   marginTop: '10px', marginLeft:'10px', marginRight:'10px'}}>
           <OverviewAndRepo />

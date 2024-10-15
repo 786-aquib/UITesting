@@ -10,16 +10,16 @@ const Header = () => {
     return (
         <div
             style={{
-                width: '100%', // Use full width
+                width: '100%', 
                 height: '68px',
                 borderBottom: '1px solid #EAECF0',
                 display: 'flex',
                 flexDirection: 'row',
                 justifyContent: isSmallScreen ? 'flex-end' : 'space-between',
                 alignItems: 'center',
-                paddingLeft: isSmallScreen ? '50px' : '0', // Add left padding on small screens
-                paddingRight: '20px', // Ensure there's space on the right
-                boxSizing: 'border-box' // Include padding in width calculations
+                paddingLeft: isSmallScreen ? '50px' : '0', 
+                paddingRight: '20px', 
+                boxSizing: 'border-box' 
             }}
         >
             <Typography

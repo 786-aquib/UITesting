@@ -10,8 +10,8 @@ import GroupIcon from '@mui/icons-material/Group';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import SettingsIcon from '@mui/icons-material/Settings';
 import ProgressBar from "./ProgressBar";
-import MenuIcon from '@mui/icons-material/Menu'; // Icon to open sidebar
-import CloseIcon from '@mui/icons-material/Close'; // Icon to close sidebar
+import MenuIcon from '@mui/icons-material/Menu'; 
+import CloseIcon from '@mui/icons-material/Close'; 
 import { useMediaQuery } from '@mui/material';
 
 export default function SideBar() {
@@ -36,12 +36,12 @@ export default function SideBar() {
                     maxWidth: '280px',
                     height: 'fit-content',
                     borderRight: '1px solid #EAECF0',
-                    position: isMobile ? 'absolute' : 'static', // Use absolute positioning only on mobile
+                    position: isMobile ? 'absolute' : 'static', 
                     top: 0,
                     left: 0,
                     backgroundColor: '#FFFAF5',
                     boxShadow: isMobile ? '2px 0 5px rgba(0,0,0,0.2)' : 'none',
-                    zIndex: 1000, // Ensure it stays on top
+                    zIndex: 1000,
                     transition: 'transform 0.3s ease',
                 }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px', marginTop:'20px' }}>
