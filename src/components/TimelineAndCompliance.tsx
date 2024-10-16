@@ -95,7 +95,8 @@ export default function TimelineAndCompliance() {
                             position: 'relative',
                             zIndex: 2,
                             alignContent: 'start',
-                            marginLeft: '9px'
+                            marginLeft: '9px',
+                            color:'#5C5F62'
                         }}
                     >
                         Click more
@@ -128,6 +129,7 @@ export default function TimelineAndCompliance() {
                             marginRight: '12px',
                             height: 'fit-content',
                             fontSize:'0.9rem',
+                            marginLeft:'16px'
                         }}
                     >
                         Non-compliant

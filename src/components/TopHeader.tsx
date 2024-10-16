@@ -33,16 +33,17 @@ const Header = () => {
                     display: 'flex',
                     flexDirection: 'row',
                     gap: '20px',
+
                 }}
             >
-                <Typography>
-                    <AddIcon color='info' />
+                <Typography sx={{ fontSize: { xs: '0.9rem', md: '1rem' } }}>
+                    <AddIcon  sx={{color:'#5C5F62'}}/>
                 </Typography>
-                <Typography>
-                    <NotificationAddSharpIcon color='info' />
+                <Typography sx={{ fontSize: { xs: '0.9rem', md: '1rem' } }} >
+                    <NotificationAddSharpIcon sx={{color:'#5C5F62'}} />
                 </Typography>
-                <Typography>
-                    <AccountCircleSharpIcon color='info' />
+                <Typography sx={{ fontSize: { xs: '0.9rem', md: '1rem' } }} >
+                    <AccountCircleSharpIcon sx={{color:'#5C5F62'}} />
                 </Typography>
             </div>
         </div>
